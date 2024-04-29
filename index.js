@@ -39,6 +39,7 @@
       empData.imageUrl || "https://cdn-icons-png.flaticon.com/512/0/93.png";
     employees.push(empData);
     renderEmployees();
+    addEmployeeForm.reset();
     addEmployeeModal.style.display = "none";
   });
 
@@ -100,5 +101,5 @@
     });
   };
   renderEmployees();
-  if (selectEmployee) renderSingleEmployee();
+  if (selectedEmployee) renderSingleEmployee();
 })();
