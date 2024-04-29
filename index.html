@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employees</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Employee Management</h1>
+        <button class="create-employee">Add Employee</button>
+      </header>
+
+      <div class="container">
+        <div class="employees-list-container">
+          <span class="employees-list-title">Employees List</span>
+          <div class="employees-list"></div>
+        </div>
+        <div class="employee-details">
+          <span class="employee-details-title">Employee Information</span>
+          <div class="employee-info"></div>
+        </div>
+      </div>
+      <!-- add employee -->
+      <div class="add-employee">
+        <form class="add-employee-form">
+          Add a new Employee
+          <div>
+            <input
+              type="text"
+              name="firstName"
+              placeholder="firstName"
+              required
+            />
+            <input
+              type="text"
+              name="lastName"
+              placeholder="lastName"
+              required
+            />
+          </div>
+            <input type="email" name="email" placeholder="email" />
+            <input
+              type="number"
+              name="contactNumber"
+              placeholder="contact number"
+            />
+            <input type="text" name="imageUrl" placeholder="image URL" />
+            <input type="text" name="address" placeholder="address" />
+            <input type="number" name="salary" placeholder="salary" />
+            <input
+              type="date"
+              name="dob"
+              placeholder="Date of Birth"
+              class="add-employee-dob"
+            />
+          <input type="submit" class="add-employee-submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
